@@ -14,7 +14,6 @@ $ErrorActionPreference = 'Stop'
 $RepoRoot = Split-Path -Parent $MyInvocation.MyCommand.Path
 $SkillsSource = Join-Path $RepoRoot 'skills'
 $CommandsSource = Join-Path $RepoRoot 'commands'
-$AgentsSource = Join-Path $RepoRoot 'agents'
 
 function Get-TargetPaths {
     param([string]$Name)
@@ -24,14 +23,12 @@ function Get-TargetPaths {
             return @{
                 Skills = Join-Path $env:USERPROFILE '.config\opencode\skills'
                 Commands = Join-Path $env:USERPROFILE '.config\opencode\commands'
-                Agents = Join-Path $env:USERPROFILE '.config\opencode\agents'
                 PreserveCategories = $true
             }
         }
         return @{
             Skills = Join-Path (Get-Location) '.opencode\skills'
             Commands = Join-Path (Get-Location) '.opencode\commands'
-            Agents = Join-Path (Get-Location) '.opencode\agents'
             PreserveCategories = $true
         }
     }
@@ -41,14 +38,12 @@ function Get-TargetPaths {
             return @{
                 Skills = Join-Path $env:USERPROFILE '.claude\skills'
                 Commands = Join-Path $env:USERPROFILE '.claude\commands'
-                Agents = $null
                 PreserveCategories = $false
             }
         }
         return @{
             Skills = Join-Path (Get-Location) '.claude\skills'
             Commands = Join-Path (Get-Location) '.claude\commands'
-            Agents = $null
             PreserveCategories = $false
         }
     }
@@ -124,30 +119,6 @@ function Install-Commands {
     }
 }
 
-function Install-Agents {
-    param([hashtable]$Paths)
-
-    if (-not $Paths.Agents) {
-        return
-    }
-    if (-not (Test-Path $AgentsSource)) {
-        throw "Agents source not found: $AgentsSource"
-    }
-
-    New-Item -ItemType Directory -Force $Paths.Agents | Out-Null
-    Write-Host "Installing agents to $($Paths.Agents)"
-    $files = Get-ChildItem $AgentsSource -File -Filter '*.md'
-    foreach ($file in $files) {
-        $dest = Join-Path $Paths.Agents $file.Name
-        if ((Test-Path $dest) -and -not $Force) {
-            Write-Host "  skip (exists): $dest" -ForegroundColor Yellow
-            continue
-        }
-        Copy-Item -Force $file.FullName $dest
-        Write-Host "  installed: $dest" -ForegroundColor Green
-    }
-}
-
 $targets = if ($Target -eq 'all') { @('opencode', 'claude') } else { @($Target) }
 
 foreach ($name in $targets) {
@@ -160,7 +131,6 @@ foreach ($name in $targets) {
     }
     if (-not $SkillsOnly) {
         Install-Commands -Paths $paths
-        Install-Agents -Paths $paths
     }
 }
 

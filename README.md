@@ -38,7 +38,7 @@ Claude Code:
 .\install.ps1 -Target opencode -Scope project
 ```
 
-`install.sh` делает то же самое в macOS/Linux. Установщик копирует навыки, команды и OpenCode-агента для `/grill-me`. `npx skills add` ставит только навыки.
+`install.sh` делает то же самое в macOS/Linux. Установщик копирует и навыки, и команды. `npx skills add` ставит только навыки.
 
 ## Команды
 
@@ -49,7 +49,6 @@ Claude Code:
 ```text
 skills/<category>/<skill>/SKILL.md
 commands/<command>.md
-agents/<agent>.md      # OpenCode-агенты
 prompts/<category>/<prompt>.md
 docs/                  # каталог, источники, формат, roadmap
 scripts/               # валидаторы и генератор навыков

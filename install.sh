@@ -8,7 +8,6 @@ FORCE="${FORCE:-0}"
 REPO_ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 SKILLS_SOURCE="$REPO_ROOT/skills"
 COMMANDS_SOURCE="$REPO_ROOT/commands"
-AGENTS_SOURCE="$REPO_ROOT/agents"
 
 usage() {
   echo "Usage: $0 [opencode|claude|all] [user|project]"
@@ -29,24 +28,20 @@ target_paths() {
     if [[ "$SCOPE" == "user" ]]; then
       SKILLS_DEST="$HOME/.config/opencode/skills"
       COMMANDS_DEST="$HOME/.config/opencode/commands"
-      AGENTS_DEST="$HOME/.config/opencode/agents"
       PRESERVE_CATEGORIES=1
     else
       SKILLS_DEST="$(pwd)/.opencode/skills"
       COMMANDS_DEST="$(pwd)/.opencode/commands"
-      AGENTS_DEST="$(pwd)/.opencode/agents"
       PRESERVE_CATEGORIES=1
     fi
   else
     if [[ "$SCOPE" == "user" ]]; then
       SKILLS_DEST="$HOME/.claude/skills"
       COMMANDS_DEST="$HOME/.claude/commands"
-      AGENTS_DEST=""
       PRESERVE_CATEGORIES=0
     else
       SKILLS_DEST="$(pwd)/.claude/skills"
       COMMANDS_DEST="$(pwd)/.claude/commands"
-      AGENTS_DEST=""
       PRESERVE_CATEGORIES=0
     fi
   fi
@@ -93,22 +88,6 @@ install_commands() {
   done
 }
 
-install_agents() {
-  [[ -n "$AGENTS_DEST" ]] || return 0
-  mkdir -p "$AGENTS_DEST"
-  echo "Installing agents to $AGENTS_DEST"
-  for file in "$AGENTS_SOURCE"/*.md; do
-    [[ -f "$file" ]] || continue
-    dest="$AGENTS_DEST/$(basename "$file")"
-    if [[ -e "$dest" && "$FORCE" != "1" ]]; then
-      echo "  skip (exists): $dest"
-      continue
-    fi
-    cp -f "$file" "$dest"
-    echo "  installed: $dest"
-  done
-}
-
 targets=("$TARGET")
 if [[ "$TARGET" == "all" ]]; then
   targets=(opencode claude)
@@ -120,7 +99,6 @@ for name in "${targets[@]}"; do
   echo "Target: $name ($SCOPE)"
   install_skills
   install_commands
-  install_agents
 done
 
 echo ""

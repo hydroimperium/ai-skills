@@ -98,19 +98,6 @@ $ARGUMENTS
 - Команда должна ссылаться на существующий навык.
 - Для вложенных команд используйте подпапки: `commands/team/review.md` → `/team/review`.
 
-Если служебные инструкции не должны быть видны в чате, используйте OpenCode-агента:
-
-```markdown
----
-description: "What the command does"
-agent: example-agent
----
-
-$ARGUMENTS
-```
-
-Системный промпт агента лежит в `agents/example-agent.md` и загружает навык. В чат попадает только текст пользователя. Это OpenCode-специфичный формат.
-
 ## Валидация
 
 ```bash
