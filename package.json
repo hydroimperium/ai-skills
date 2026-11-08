@@ -1,0 +1,16 @@
+{
+  "name": "ai-skills",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Personal Agent Skills for development, study, and work, plus a universal prompt enhancer.",
+  "scripts": {
+    "validate": "node scripts/validate-skills.mjs && node scripts/validate-commands.mjs",
+    "validate:skills": "node scripts/validate-skills.mjs",
+    "validate:commands": "node scripts/validate-commands.mjs",
+    "new": "node scripts/new-skill.mjs"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

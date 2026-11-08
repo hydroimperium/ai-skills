@@ -1,0 +1,40 @@
+# Dependencies
+node_modules/
+.pnpm-store/
+.yarn/
+
+# Local environment and secrets
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+secrets/
+
+# Build and cache
+dist/
+build/
+.cache/
+*.tsbuildinfo
+__pycache__/
+.venv/
+venv/
+
+# Logs and temp files
+*.log
+*.tmp
+*.temp
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editor and OS
+.idea/
+.vscode/
+*.swp
+*~
+
+# Local agent state
+.opencode/
+.claude/
+.agents/
