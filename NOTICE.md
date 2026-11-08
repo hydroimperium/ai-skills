@@ -50,7 +50,7 @@ This repository is an original curated collection. It is not a fork, mirror, or 
 
 ## Rights
 
-- Original text and commands in this repository are copyright of the repository owner. All rights reserved.
+- Original text in this repository is copyright of the repository owner. All rights reserved.
 - No license is granted for the original text unless explicitly stated in writing.
 - Third-party projects keep their own licenses.
 - If a future skill includes substantial copied or adapted text, the skill must carry the source license and attribution in its frontmatter and in `docs/SOURCES.md`.

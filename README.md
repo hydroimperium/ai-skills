@@ -1,8 +1,8 @@
 # AI Skills
 
-Личная коллекция Agent Skills и слэш-команд для разработки, учёбы, текста, языка, работы, данных, продукта и дизайна. Плюс универсальный промпт-энхансер.
+Универсальные Agent Skills для разработки, учёбы, текста, языка, работы, данных, продукта и дизайна. Плюс универсальный промпт-энхансер.
 
-**37 навыков · 38 команд · 9 категорий**
+**37 навыков · 9 категорий**
 
 ## Категории
 
@@ -20,38 +20,29 @@
 
 ## Установка
 
-OpenCode:
+Через `skills.sh`:
 
-```powershell
-.\install.ps1 -Target opencode
+```bash
+npx skills add hydroimperium/ai-skills
 ```
 
-Claude Code:
+Вручную: скопируйте нужную папку `skills/<category>/<skill>/` в каталог навыков вашего агента.
 
-```powershell
-.\install.ps1 -Target claude
-```
+## Для OpenCode Desktop
 
-В текущий проект:
+Команды, скрытые агенты и установщик для OpenCode вынесены в отдельный репозиторий:
 
-```powershell
-.\install.ps1 -Target opencode -Scope project
-```
+**https://github.com/hydroimperium/opencode-ai-skills**
 
-`install.sh` делает то же самое в macOS/Linux. Установщик копирует и навыки, и команды. `npx skills add` ставит только навыки.
-
-## Команды
-
-`/prompt`, `/plan`, `/spec`, `/tasks`, `/grill-me`, `/brainstorm`, `/review`, `/debug`, `/test`, `/verify`, `/commit`, `/api`, `/refactor`, `/docs`, `/research`, `/learn`, `/notes`, `/lab`, `/coursework`, `/gost`, `/originality`, `/write`, `/humanize`, `/edit-ru`, `/translate`, `/ru-quality`, `/meeting`, `/slides`, `/project`, `/career`, `/data`, `/sql`, `/prd`, `/prioritize`, `/ui`, `/a11y`, `/skill`, `/handoff`.
+Здесь остаются только универсальные `SKILL.md`, которые работают в любом Agent Skills-совместимом агенте.
 
 ## Структура
 
 ```text
 skills/<category>/<skill>/SKILL.md
-commands/<command>.md
 prompts/<category>/<prompt>.md
 docs/                  # каталог, источники, формат, roadmap
-scripts/               # валидаторы и генератор навыков
+scripts/               # валидатор и генератор навыков
 ```
 
 ## Проверка
@@ -62,4 +53,4 @@ npm run validate
 
 ## Права и источники
 
-© 2026 hydroimperium. Все права защищены. Лицензия на оригинальные тексты и команды не предоставляется. Сторонние идеи и их лицензии перечислены в [`docs/SOURCES.md`](docs/SOURCES.md) и [`NOTICE.md`](NOTICE.md).
+© 2026 hydroimperium. Все права защищены. Лицензия на оригинальные тексты не предоставляется. Сторонние идеи и их лицензии перечислены в [`docs/SOURCES.md`](docs/SOURCES.md) и [`NOTICE.md`](NOTICE.md).

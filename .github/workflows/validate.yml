@@ -1,4 +1,4 @@
-name: Validate skills and commands
+name: Validate skills
 
 on:
   push:
@@ -16,5 +16,5 @@ jobs:
         with:
           node-version: 20
 
-      - name: Validate Agent Skills and slash commands
+      - name: Validate Agent Skills
         run: npm run validate
