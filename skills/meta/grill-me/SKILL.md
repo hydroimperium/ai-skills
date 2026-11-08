@@ -1,9 +1,9 @@
 ---
 name: grill-me
-description: Stress-tests a plan, design, decision, or idea through a relentless structured interview. Use when the user wants to sharpen their thinking, find hidden assumptions, prepare for a difficult review, or says "grill me", "задай мне вопросы", "допроси меня", "стресс-тест", "разнеси идею". Asks the whole current frontier of decisions in rounds, with a recommended answer for each question.
+description: Stress-tests a plan, design, decision, or idea through a relentless one-question-at-a-time interview with interactive options. Use when the user wants to sharpen their thinking, find hidden assumptions, prepare for a difficult review, or says "grill me", "задай мне вопросы", "допроси меня", "стресс-тест", "разнеси идею". Puts the recommended answer first.
 metadata:
   category: meta
-  version: "1.0.0"
+  version: "1.1.0"
   inspired-by: "mattpocock/skills"
 ---
 
@@ -22,6 +22,21 @@ Use when the user:
 
 Do not use for simple factual questions or when the user wants immediate execution without discussion.
 
+## Use the interactive question tool
+
+If the harness has a question tool, use it for every decision. Ask **one question per tool call**. Do not dump a numbered list of questions into chat unless the tool is unavailable.
+
+The question tool should show:
+
+- a short header;
+- one clear question;
+- 2–5 realistic options;
+- the recommended option first, marked `(Recommended)`;
+- a short description for each option explaining the consequence;
+- `multiple: true` only when the choices are not mutually exclusive.
+
+Do not add a fake "Other" option; the question tool adds a free-form answer automatically. Do not ask for facts you can look up.
+
 ## The design tree
 
 Treat the plan as a tree of decisions:
@@ -31,35 +46,37 @@ Treat the plan as a tree of decisions:
 - A decision is **settled** when the user has answered it.
 - The **frontier** is every decision whose prerequisites are settled and which you can ask now without guessing.
 
-Do not ask a question whose answer depends on another question still open in the same round. Put it in a later round.
+Ask only the current frontier. A question whose answer depends on another open question belongs to a later step.
 
-## Rounds
+## First question
 
-Ask the whole frontier in one round. Number each question. For each question:
+Start with one question:
 
-- give it a short title;
-- explain the decision and the realistic options;
-- give your recommended answer first;
-- word it so "yes" accepts the recommendation.
+**What exactly are we grilling?**
 
-Format:
+Offer 2–4 options based on the conversation, with the user's current request as the recommended option. If there is no context, offer the main categories from the repository or the user's recent work.
+
+Example:
 
 ```text
-Q1 — <short title>
-<question, options, consequences>
-Recommended: <answer and why>
-
-Q2 — <short title>
-...
+Header: What are we grilling?
+Question: Какую задачу или проект мы детально разберем на этом интервью?
+Options:
+1. (Recommended) <the user's current plan or idea>
+2. <a related alternative from context>
+3. <another plausible option>
 ```
 
-Wait for the answers. Then recompute the frontier: settled answers unblock new questions. Ask the next round. Stop when the frontier is empty.
+## Question sequence
 
-## Facts versus decisions
+After each answer:
 
-- **Facts are your job.** Read the files, code, docs, data, and environment. If a fact needs investigation, use a subagent or a tool. Do not ask the user for something you can look up.
-- **Decisions are the user's job.** Put each decision to the user and wait.
-- If a fact is still being investigated, do not block the whole round. Ask the questions that do not depend on it; ask the downstream questions in a later round.
+1. Mark the decision as settled.
+2. Recompute the frontier.
+3. Ask the next single question with the question tool.
+4. Wait for the answer.
+
+Do not ask the next question until the current one is answered or skipped.
 
 ## Question quality
 
@@ -77,13 +94,32 @@ Bad questions:
 - ask for permission to do the obvious;
 - are so broad that any answer is possible;
 - have no consequence;
-- repeat a settled decision.
+- repeat a settled decision;
+- bundle several independent decisions into one question.
+
+## Facts versus decisions
+
+- **Facts are your job.** Read the files, code, docs, data, and environment. If a fact needs investigation, use a subagent or a tool. Do not ask the user for something you can look up.
+- **Decisions are the user's job.** Put each decision to the user and wait.
+- If a fact is still being investigated, do not block the whole interview. Ask the questions that do not depend on it; ask the downstream questions later.
+
+## Fallback without a question tool
+
+If the harness has no interactive question tool, ask one question per message in plain text:
+
+```text
+Q1 — <short title>
+<question and options>
+Recommended: <answer and why>
+```
+
+Wait for the answer before asking the next question. Do not fall back to a wall of questions.
 
 ## Stop condition
 
 The session is done when:
 
-- every branch of the design tree has been visited;
+- every important branch of the design tree has been visited;
 - no important assumption is silently accepted;
 - the user confirms the shared understanding;
 - the remaining open questions are explicitly listed.
@@ -121,16 +157,19 @@ At the end, return:
 ## Rules
 
 - Do not soften a weak point to be polite.
-- Do not ask more than one round at a time.
+- Do not ask more than one question per tool call.
 - Do not invent facts to fill a gap.
 - Do not start implementing while the interview is open.
+- If the user skips a question, use the recommended option and record it as an assumption.
 - If the user says "enough" or "just decide", summarize the open decisions and proceed with explicit assumptions.
 
 ## Quality checks
 
 - [ ] The main goal is stated.
+- [ ] The question tool is used when available.
+- [ ] One question is asked per tool call.
+- [ ] The recommended option is first and marked.
+- [ ] Each option has a consequence.
 - [ ] The design tree covers the important decisions.
-- [ ] Each round asks only the current frontier.
-- [ ] Each question has a recommendation.
 - [ ] Facts were looked up, not asked.
 - [ ] The final summary separates decisions, assumptions, and open questions.
