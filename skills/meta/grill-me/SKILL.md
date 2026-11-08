@@ -24,7 +24,9 @@ Do not use for simple factual questions or when the user wants immediate executi
 
 ## Use the interactive question tool
 
-If the harness has a question tool, use it for every decision. Ask **one question per tool call**. Do not dump a numbered list of questions into chat unless the tool is unavailable.
+If the harness has a question tool, use it for every decision. Ask **one question per tool call**, then continue automatically with the next question after each answer. Do not dump a numbered list of questions into chat unless the tool is unavailable.
+
+There is no fixed question limit. A typical session has 5–12 questions. Keep asking until the design tree is exhausted. Do not stop after the first question or after an arbitrary number.
 
 The question tool should show:
 
@@ -75,8 +77,9 @@ After each answer:
 2. Recompute the frontier.
 3. Ask the next single question with the question tool.
 4. Wait for the answer.
+5. Repeat. Do not wait for a new user prompt between questions.
 
-Do not ask the next question until the current one is answered or skipped.
+Do not ask the next question until the current one is answered or skipped. Do not stop after one question; continue until the frontier is empty or the user says "enough".
 
 ## Question quality
 
@@ -158,6 +161,7 @@ At the end, return:
 
 - Do not soften a weak point to be polite.
 - Do not ask more than one question per tool call.
+- Do not stop after the first question; ask as many as the design tree requires.
 - Do not invent facts to fill a gap.
 - Do not start implementing while the interview is open.
 - If the user skips a question, use the recommended option and record it as an assumption.
