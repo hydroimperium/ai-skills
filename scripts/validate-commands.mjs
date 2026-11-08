@@ -7,6 +7,7 @@ import process from 'node:process';
 const root = process.cwd();
 const commandsDir = path.join(root, 'commands');
 const skillsDir = path.join(root, 'skills');
+const agentsDir = path.join(root, 'agents');
 const errors = [];
 const warnings = [];
 const commands = [];
@@ -79,10 +80,30 @@ async function checkCommand(file) {
   }
 
   const skillMatch = body.match(/Load the `([a-z0-9-]+)` skill/);
-  if (!skillMatch) {
-    warnings.push(`${relative}: does not reference a skill with "Load the \`<name>\` skill"`);
-  } else if (!skillNames.has(skillMatch[1])) {
-    errors.push(`${relative}: references missing skill "${skillMatch[1]}"`);
+  const agentLine = frontmatter.split(/\r?\n/).find((line) => line.startsWith('agent:'));
+  const agentName = agentLine
+    ? agentLine.slice('agent:'.length).trim().replace(/^["']|["']$/g, '')
+    : '';
+
+  if (skillMatch) {
+    if (!skillNames.has(skillMatch[1])) {
+      errors.push(`${relative}: references missing skill "${skillMatch[1]}"`);
+    }
+  } else if (agentName) {
+    const agentFile = path.join(agentsDir, `${agentName}.md`);
+    if (!existsSync(agentFile)) {
+      errors.push(`${relative}: references missing agent "${agentName}"`);
+    } else {
+      const agentText = await readFile(agentFile, 'utf8');
+      const agentSkill = agentText.match(/Load the `([a-z0-9-]+)` skill/);
+      if (!agentSkill) {
+        errors.push(`${relative}: agent "${agentName}" does not reference a skill`);
+      } else if (!skillNames.has(agentSkill[1])) {
+        errors.push(`${relative}: agent "${agentName}" references missing skill "${agentSkill[1]}"`);
+      }
+    }
+  } else {
+    warnings.push(`${relative}: does not reference a skill or agent`);
   }
 
   commands.push({ name: commandName, relative });

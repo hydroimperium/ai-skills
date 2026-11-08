@@ -123,6 +123,8 @@ The command name is the file name. `commands/plan.md` becomes `/plan`.
 
 Each command file is a prompt template. `$ARGUMENTS` is replaced with everything the user types after the command.
 
+`/grill-me` uses an OpenCode agent (`agents/grill.md`) so its service instructions stay in the system prompt and do not appear in the chat. Other commands put their instructions directly into the submitted prompt.
+
 Example:
 
 ```text
