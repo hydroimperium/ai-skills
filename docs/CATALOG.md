@@ -12,6 +12,7 @@
 | [`grill-me`](../skills/meta/grill-me/SKILL.md) | Стресс-тест плана или идеи через структурированное интервью |
 | [`plan`](../skills/meta/plan/SKILL.md) | Spec, план, разбивка на задачи, критерии готовности |
 | [`brainstorm`](../skills/meta/brainstorm/SKILL.md) | Разойтись в вариантах и сузить до короткого списка |
+| [`orchestrate`](../skills/meta/orchestrate/SKILL.md) | Сложная задача: решить, нужны ли субагенты, распределить роли и пайплайн |
 
 ### Разработка
 

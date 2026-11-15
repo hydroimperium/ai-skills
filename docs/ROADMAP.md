@@ -2,7 +2,7 @@
 
 ## Сейчас (MVP)
 
-- 37 навыков в 9 категориях: `meta`, `engineering`, `study`, `writing`, `language`, `work`, `data`, `product`, `design`.
+- 38 навыков в 9 категориях: `meta`, `engineering`, `study`, `writing`, `language`, `work`, `data`, `product`, `design`.
 - Универсальный `prompt-enhancer` + standalone-версия.
 - Русскоязычные навыки: редактура, проверка UI-строк, перевод, академическое письмо, ГОСТ, оригинальность.
 - Валидатор навыков и CI.
