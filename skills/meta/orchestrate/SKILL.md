@@ -28,7 +28,7 @@ Do not use when:
 - subagents would edit the same files;
 - the coordination cost is higher than the task itself.
 
-If the task is simple, say so and do it directly.
+Exception: when the user explicitly invokes an orchestration command such as `/orchestrate`, always launch at least one subagent. For a small task, use one read-only researcher or reviewer instead of skipping subagents entirely.
 
 ## Step 1: Decide if a team is worth it
 
@@ -111,6 +111,7 @@ Typical roles:
 
 If the harness has a subagent tool:
 
+- When this skill is explicitly invoked, launch at least one subagent even if the task is small. For a trivial task, one read-only researcher or reviewer is enough.
 - Use a read-only agent for research and review.
 - Use a general agent for implementation.
 - Launch independent roles in parallel.
@@ -118,6 +119,7 @@ If the harness has a subagent tool:
 - Give each subagent a self-contained prompt: task, context, files, output format, boundaries, stop conditions.
 - Ask for a compact report with evidence, not a full transcript.
 - For read-only research, tell the subagent to use `read`, `glob`, and `grep` instead of shell commands. Shell permission prompts slow everything down.
+- Record the child session ID and title returned by the subagent tool. Show them to the user so they can open the child session and watch it live.
 - After launching independent roles, stop and wait for their reports. Do not fill the wait with unrelated exploration or repeated status checks.
 - If the harness returns results asynchronously, wait for completion notifications, then synthesize immediately.
 - Set a soft deadline: 2–3 minutes for a small task, 5–10 minutes for a large one. If reports are still missing, synthesize what you have and state what is pending.
@@ -176,8 +178,9 @@ After completion:
 
 ## Subagents used
 
-| Role | What it returned | Verified? |
-|---|---|---|
+| Role | Session ID | Title | What it returned | Verified? |
+|---|---|---|---|---|
+| <role> | <ses_...> | <child session title> | <summary> | yes/no |
 
 ## Conflicts resolved
 
@@ -194,7 +197,8 @@ After completion:
 
 ## Rules
 
-- Do not create subagents for a simple task.
+- When explicitly invoked via `/orchestrate`, always launch at least one subagent.
+- Outside an explicit orchestration request, do not create subagents for a simple task.
 - Do not create more than five unless the task clearly justifies it.
 - Do not let writers share files in parallel.
 - Do not delegate the final verification.
