@@ -1,6 +1,6 @@
 ---
 name: academic-originality
-description: Improves genuine originality and academic quality in Russian student texts through synthesis, citation, restructuring, and removal of AI-slop. Use when the user asks to raise originality, rewrite a курсовая or ВКР, remove AI-slop from academic text, or make a paper sound human. Does not help evade plagiarism or AI detectors, fabricate sources, or ghostwrite graded work.
+description: "Improves genuine originality and academic quality in Russian student texts through synthesis, citation, restructuring, and removal of AI-slop. Use when the user asks to raise originality, rewrite a курсовая or ВКР, remove AI-slop from academic text, or make a paper sound human. Trigger on \"оригинальность\", \"антиплагиат\", \"перепиши\", \"убери AI-слоп\", \"курсовая\", \"ВКР\". Does not help evade plagiarism or AI detectors, fabricate sources, or ghostwrite graded work. For writing a new paper use russian-academic-writing; for GOST formatting use gost-formatting."
 metadata:
   category: study
   version: "1.0.0"

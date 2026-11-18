@@ -1,6 +1,6 @@
 ---
 name: systematic-debugging
-description: Finds root causes before proposing fixes for bugs, test failures, crashes, performance problems, build failures, and unexpected behavior. Use when something is broken, when a previous fix did not work, or when the user asks to debug, diagnose, investigate, or find the root cause. Trigger on "debug", "bug", "не работает", "падает", "ошибка", "почему".
+description: "Finds root causes before proposing fixes for bugs, test failures, crashes, performance problems, build failures, and unexpected behavior. Use when something is broken, when a previous fix did not work, or when the user asks to debug, diagnose, investigate, or find the root cause. Trigger on \"debug\", \"bug\", \"не работает\", \"падает\", \"ошибка\", \"почему\", \"root cause\". For implementing the fix with tests use test-driven-development."
 metadata:
   category: engineering
   version: "1.0.0"

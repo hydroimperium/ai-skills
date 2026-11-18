@@ -1,6 +1,6 @@
 ---
 name: russian-editor
-description: Edits Russian prose for meaning, structure, tone, grammar, and typography. Use when the user asks to edit, shorten, improve, or review a Russian text, remove officialese, or make a draft clearer. Trigger on "отредактируй", "почисти текст", "сократи", "убери канцелярит", "проверь текст", "редактура", "сделай проще". Works with articles, posts, emails, documentation, and UI copy.
+description: "Edits Russian prose for meaning, structure, tone, grammar, and typography. Use when the user asks to edit, shorten, improve, or review a Russian text, remove officialese, or make a draft clearer. Trigger on \"отредактируй\", \"почисти текст\", \"сократи\", \"убери канцелярит\", \"проверь текст\", \"редактура\", \"сделай проще\". Works with articles, posts, emails, documentation, and UI copy. For AI-slop removal use humanizer; for UI strings use russian-text-quality."
 metadata:
   category: language
   version: "1.0.0"

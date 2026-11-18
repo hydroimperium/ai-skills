@@ -1,6 +1,6 @@
 ---
 name: prd
-description: Writes product requirement documents with problem, users, goals, non-goals, requirements, success metrics, risks, and rollout. Use when the user asks for a PRD, feature spec, product brief, or requirements document. Trigger on "PRD", "product requirements", "спецификация фичи", "требования", "ТЗ", "продуктовый документ".
+description: "Writes product requirement documents with problem, users, goals, non-goals, requirements, success metrics, risks, and rollout. Use when the user asks for a PRD, feature spec, product brief, or requirements document. Trigger on \"PRD\", \"product requirements\", \"спецификация фичи\", \"требования\", \"ТЗ\", \"продуктовый документ\". For implementation plans use plan; for project roadmaps use project-planning."
 metadata:
   category: product
   version: "1.0.0"

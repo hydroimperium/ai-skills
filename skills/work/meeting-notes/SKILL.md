@@ -1,6 +1,6 @@
 ---
 name: meeting-notes
-description: Prepares meetings and turns transcripts, notes, or discussions into decisions, action items, and follow-ups. Use when the user asks for an agenda, meeting notes, a summary, action items, or a follow-up message. Trigger on "meeting", "встреча", "созвон", "протокол", "action items", "итоги встречи".
+description: "Prepares meetings and turns transcripts, notes, or discussions into decisions, action items, and follow-ups. Use when the user asks for an agenda, meeting notes, a summary, action items, or a follow-up message. Trigger on \"meeting\", \"встреча\", \"созвон\", \"протокол\", \"action items\", \"итоги встречи\", \"повестка\". For study notes use study-notes; for project planning use project-planning."
 metadata:
   category: work
   version: "1.0.0"

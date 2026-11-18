@@ -13,6 +13,10 @@
 | [`plan`](../skills/meta/plan/SKILL.md) | Spec, план, разбивка на задачи, критерии готовности |
 | [`brainstorm`](../skills/meta/brainstorm/SKILL.md) | Разойтись в вариантах и сузить до короткого списка |
 | [`orchestrate`](../skills/meta/orchestrate/SKILL.md) | Сложная задача: решить, нужны ли субагенты, распределить роли и пайплайн |
+| [`agent-ready`](../skills/meta/agent-ready/SKILL.md) | Подготовить репозиторий для агента: AGENTS.md, память проекта, контекст |
+| [`planning-with-files`](../skills/meta/planning-with-files/SKILL.md) | Длинная задача с планом и прогрессом в файлах, переживает компакцию |
+| [`recursive-decomposition`](../skills/meta/recursive-decomposition/SKILL.md) | Большой проект или много файлов: разбить, делегировать, свести |
+| [`find-skills`](../skills/meta/find-skills/SKILL.md) | Найти и установить внешний навык, если локального не хватает |
 
 ### Разработка
 
@@ -27,6 +31,7 @@
 | [`api-design`](../skills/engineering/api-design/SKILL.md) | Проектирование и ревью API, схем, ошибок, версионирования |
 | [`refactoring`](../skills/engineering/refactoring/SKILL.md) | Улучшение структуры кода без изменения поведения |
 | [`documentation`](../skills/engineering/documentation/SKILL.md) | README, ADR, API-справка, how-to, onboarding |
+| [`webapp-testing`](../skills/engineering/webapp-testing/SKILL.md) | Проверить веб-интерфейс в браузере: формы, сценарии, консоль, сеть |
 
 ### Учёба
 

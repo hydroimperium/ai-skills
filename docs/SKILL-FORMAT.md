@@ -47,6 +47,29 @@ Instructions...
 | `metadata` | Строковые пары: категория, версия, источник |
 | `allowed-tools` | Экспериментальное поле для предодобренных инструментов |
 
+## Формула description
+
+`description` — это не аннотация, а триггер. Агент читает его, чтобы решить, загружать ли навык. Пишите одним абзацем:
+
+```text
+<что делает>. Use when <когда использовать>. Trigger on "<EN-фраза>", "<RU-фраза>", "<ещё синоним>". <граница: для X используйте Y>. <гарантия качества>.
+```
+
+Правила:
+
+- Начинайте с глагола: `Reviews`, `Writes`, `Plans`, `Finds`.
+- Добавляйте `Use when ...` с конкретными ситуациями, а не общими словами.
+- Давайте 3–7 триггерных фраз, включая русские формулировки пользователя.
+- Указывайте границу, если есть пересечение: `For X use Y instead`.
+- Не перечисляйте всё тело навыка; description должен быть коротким и точным.
+- Проверяйте `npm run validate`: валидатор предупреждает, если нет `Use when`, триггеров, русских фраз или границы.
+
+Пример:
+
+```text
+Reviews a branch, pull request, commit range, or uncommitted changes for correctness, standards, scope, tests, and risk. Use when the user asks to review code, check a PR, inspect a diff, or decide whether a change is ready to merge. Trigger on "review", "code review", "ревью", "проверь код", "посмотри PR". For security-only review use security-review instead.
+```
+
 ## Прогрессивное раскрытие
 
 1. **Метаданные** (`name`, `description`) — всегда в контексте.

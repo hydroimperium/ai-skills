@@ -1,6 +1,6 @@
 ---
 name: brainstorm
-description: Generates, compares, and narrows options for an idea, feature, name, strategy, or problem. Use when the user needs divergent thinking, a decision shortlist, or help getting unstuck. Trigger on "brainstorm", "идеи", "варианты", "мозговой штурм", "предложи варианты", "как ещё можно". Separates idea generation from evaluation and does not invent facts.
+description: "Generates, compares, and narrows options for an idea, feature, name, strategy, or problem. Use when the user needs divergent thinking, a decision shortlist, or help getting unstuck. Trigger on \"brainstorm\", \"идеи\", \"варианты\", \"мозговой штурм\", \"предложи варианты\", \"как ещё можно\". Separates idea generation from evaluation and does not invent facts. For stress-testing one idea use grill-me; for a written plan use plan."
 metadata:
   category: meta
   version: "1.0.0"

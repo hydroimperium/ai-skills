@@ -1,6 +1,6 @@
 ---
 name: frontend-design
-description: Designs and reviews web interfaces for hierarchy, typography, spacing, color, states, responsiveness, and visual quality. Use when the user asks to design a page, improve a UI, review a frontend, or make an interface look less generic. Trigger on "UI", "UX", "frontend", "дизайн", "интерфейс", "верстка", "сделай красиво", "review UI".
+description: "Designs and reviews web interfaces for hierarchy, typography, spacing, color, states, responsiveness, and visual quality. Use when the user asks to design a page, improve a UI, review a frontend, or make an interface look less generic. Trigger on \"UI\", \"UX\", \"frontend\", \"дизайн\", \"интерфейс\", \"верстка\", \"сделай красиво\", \"сделай интерфейс красивее\", \"убери generic AI\", \"шаблонный дизайн\", \"review UI\". For accessibility audits use accessibility; for browser testing use webapp-testing."
 metadata:
   category: design
   version: "1.0.0"

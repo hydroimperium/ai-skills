@@ -1,6 +1,6 @@
 ---
 name: refactoring
-description: Improves code structure without changing behavior. Use when code is hard to read, duplicated, tightly coupled, or risky to change; when preparing a feature; or when the user asks to refactor, simplify, clean up, or reduce technical debt. Trigger on "refactor", "рефакторинг", "упрости код", "почисти код", "техдолг".
+description: "Improves code structure without changing behavior. Use when code is hard to read, duplicated, tightly coupled, or risky to change; when preparing a feature; or when the user asks to refactor, simplify, clean up, or reduce technical debt. Trigger on \"refactor\", \"рефакторинг\", \"упрости код\", \"почисти код\", \"техдолг\", \"вынеси в функцию\". For reviewing a change use code-review; for root-cause diagnosis use systematic-debugging."
 metadata:
   category: engineering
   version: "1.0.0"

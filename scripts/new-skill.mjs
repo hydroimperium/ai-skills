@@ -32,7 +32,7 @@ const name = positionals[0];
 const category = flags.get('--category') ?? '';
 const description =
   flags.get('--description') ??
-  'Describe what this skill does and when an agent should use it. Include trigger words and concrete contexts.';
+  '<What it does>. Use when <situations>. Trigger on "<English phrase>", "<Russian phrase>". <Boundary: for X use Y instead.> <Quality guarantee>.';
 
 if (!/^[a-z0-9]+(?:-[a-z0-9]+)*$/.test(name)) {
   console.error('Skill name must use lowercase letters, numbers, and single hyphens.');
@@ -56,6 +56,16 @@ if (!categories.includes(category)) {
 
 if (!description.trim() || description.length > 1024) {
   console.error('Description must be 1–1024 characters.');
+  process.exit(1);
+}
+
+if (!/\buse (when|for)\b/i.test(description)) {
+  console.error('Description must include "Use when ..." so the agent knows when to load the skill.');
+  process.exit(1);
+}
+
+if (!/\btrigger(s|ed)? on\b/i.test(description)) {
+  console.error('Description must include "Trigger on ..." with concrete English and Russian phrases.');
   process.exit(1);
 }
 

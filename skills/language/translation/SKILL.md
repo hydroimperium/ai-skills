@@ -1,6 +1,6 @@
 ---
 name: translation
-description: Translates between Russian and English with attention to meaning, terminology, register, and natural style. Use when the user asks to translate a text, localize UI strings, adapt a document, or review an existing translation. Trigger on "translate", "переведи", "перевод", "локализация", "EN→RU", "RU→EN". Preserves facts, names, and formatting; does not invent content.
+description: "Translates between Russian and English with attention to meaning, terminology, register, and natural style. Use when the user asks to translate a text, localize UI strings, adapt a document, or review an existing translation. Trigger on \"translate\", \"переведи\", \"перевод\", \"локализация\", \"EN→RU\", \"RU→EN\", \"английский текст\". Preserves facts, names, and formatting; does not invent content. For editing Russian prose use russian-editor; for UI locale quality use russian-text-quality."
 metadata:
   category: language
   version: "1.0.0"

@@ -1,6 +1,6 @@
 ---
 name: presentation-builder
-description: Builds presentation structure, slide outlines, speaker notes, and visual direction. Use when the user asks for a presentation, slide deck, pitch, talk, defense, or wants to improve an existing deck. Trigger on "presentation", "slides", "презентация", "слайды", "питч", "выступление", "защита проекта".
+description: "Builds presentation structure, slide outlines, speaker notes, and visual direction. Use when the user asks for a presentation, slide deck, pitch, talk, defense, or wants to improve an existing deck. Trigger on \"presentation\", \"slides\", \"презентация\", \"слайды\", \"питч\", \"выступление\", \"защита проекта\", \"доклад\". For visual UI design use frontend-design; for the final HTML build work directly in the project."
 metadata:
   category: work
   version: "1.0.0"

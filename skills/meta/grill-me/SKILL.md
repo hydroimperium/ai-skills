@@ -1,6 +1,6 @@
 ---
 name: grill-me
-description: Stress-tests a plan, design, decision, or idea through a relentless one-question-at-a-time interview with interactive options. Use when the user wants to sharpen their thinking, find hidden assumptions, prepare for a difficult review, or says "grill me", "задай мне вопросы", "допроси меня", "стресс-тест", "разнеси идею". Puts the recommended answer first.
+description: "Stress-tests a plan, design, decision, or idea through a relentless one-question-at-a-time interview with interactive options. Use when the user wants to sharpen their thinking, find hidden assumptions, prepare for a difficult review, or says \"grill me\", \"задай мне вопросы\", \"допроси меня\", \"стресс-тест\", \"разнеси идею\". Trigger on \"grill me\", \"question me\", \"задай вопросы\", \"допроси\", \"стресс-тест\", \"проверь идею\". Puts the recommended answer first. For open-ended option generation use brainstorm; for a written plan use plan."
 metadata:
   category: meta
   version: "1.1.0"

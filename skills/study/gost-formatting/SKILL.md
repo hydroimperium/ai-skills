@@ -1,6 +1,6 @@
 ---
 name: gost-formatting
-description: Checks and formats Russian student papers according to GOST 7.32 and university requirements, including margins, fonts, spacing, headings, figures, tables, formulas, bibliography, appendices, and title pages. Use when the user asks to format or check a курсовая, ВКР, лабораторная, отчёт, реферат, or список литературы. Russian-first.
+description: "Checks and formats Russian student papers according to GOST 7.32 and university requirements, including margins, fonts, spacing, headings, figures, tables, formulas, bibliography, appendices, and title pages. Use when the user asks to format or check a курсовая, ВКР, лабораторная, отчёт, реферат, or список литературы. Trigger on \"ГОСТ\", \"GOST\", \"оформление\", \"поля\", \"шрифт\", \"титульник\", \"библиография\", \"курсовая\", \"ВКР\". Russian-first. For writing or restructuring the text use russian-academic-writing."
 metadata:
   category: study
   version: "1.0.0"

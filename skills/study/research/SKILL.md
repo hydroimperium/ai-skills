@@ -1,6 +1,6 @@
 ---
 name: research
-description: Researches a topic, question, or decision using sources, evidence, and synthesis. Use when the user asks to investigate, compare, find sources, review literature, understand a field, or make an evidence-based decision. Trigger on "research", "исследуй", "найди источники", "сравни", "обзор", "литературный обзор", "literature review".
+description: "Researches a topic, question, or decision using sources, evidence, and synthesis. Use when the user asks to investigate, compare, find sources, review literature, understand a field, or make an evidence-based decision. Trigger on \"research\", \"исследуй\", \"найди источники\", \"собери источники\", \"поиск информации\", \"сравни\", \"обзор\", \"литературный обзор\", \"literature review\". Load this skill before searching the web or reading a pile of sources. For turning sources into study notes use study-notes; for academic writing use russian-academic-writing."
 metadata:
   category: study
   version: "1.0.0"

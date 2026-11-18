@@ -1,6 +1,6 @@
 ---
 name: accessibility
-description: Reviews and improves web accessibility for keyboard users, screen readers, contrast, semantics, forms, and responsive interfaces. Use when the user asks for an accessibility audit, WCAG review, or wants to make a UI usable by more people. Trigger on "accessibility", "a11y", "WCAG", "доступность", "скринридер", "клавиатура", "контраст".
+description: "Reviews and improves web accessibility for keyboard users, screen readers, contrast, semantics, forms, and responsive interfaces. Use when the user asks for an accessibility audit, WCAG review, or wants to make a UI usable by more people. Trigger on \"accessibility\", \"a11y\", \"WCAG\", \"доступность\", \"скринридер\", \"клавиатура\", \"контраст\". For visual design review use frontend-design; for browser testing use webapp-testing."
 metadata:
   category: design
   version: "1.0.0"

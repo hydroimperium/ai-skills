@@ -1,6 +1,6 @@
 ---
 name: api-design
-description: Designs and reviews APIs, interfaces, and contracts for correctness, consistency, security, and evolvability. Use when defining endpoints, request and response schemas, errors, auth, pagination, versioning, or integration boundaries. Trigger on "API", "endpoint", "эндпоинт", "contract", "interface", "спроектируй API", "контракт".
+description: "Designs and reviews APIs, interfaces, and contracts for correctness, consistency, security, and evolvability. Use when defining endpoints, request and response schemas, errors, auth, pagination, versioning, or integration boundaries. Trigger on \"API\", \"endpoint\", \"эндпоинт\", \"contract\", \"interface\", \"спроектируй API\", \"контракт\". For API documentation use documentation; for security review use security-review."
 metadata:
   category: engineering
   version: "1.0.0"

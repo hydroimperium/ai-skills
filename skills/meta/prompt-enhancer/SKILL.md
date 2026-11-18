@@ -1,6 +1,6 @@
 ---
 name: prompt-enhancer
-description: Turns a rough request or draft into a detailed, production-ready prompt for any AI tool. Use when the user asks to write, improve, expand, structure, or adapt a prompt; says "prompt enhancer", "улучши промпт", "напиши промпт", "сделай промпт подробнее", "расширь промпт", "промпт для курсовой", "промпт для лабораторной"; or wants a prompt for coding agents, chat models, research, writing, study, academic tasks, work, image, or video tools. Produces a prompt, never the task result.
+description: "Turns a rough request or draft into a detailed, production-ready prompt for any AI tool. Use when the user asks to write, improve, expand, structure, or adapt a prompt; says \"prompt enhancer\", \"улучши промпт\", \"напиши промпт\", \"сделай промпт подробнее\", \"расширь промпт\", \"промпт для курсовой\", \"промпт для лабораторной\"; or wants a prompt for coding agents, chat models, research, writing, study, academic tasks, work, image, or video tools. Trigger on \"prompt\", \"промпт\", \"улучши промпт\", \"prompt engineering\". Produces a prompt, never the task result. For creating a reusable skill use skill-creator."
 metadata:
   category: meta
   version: "1.0.0"

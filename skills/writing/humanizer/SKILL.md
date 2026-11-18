@@ -1,6 +1,6 @@
 ---
 name: humanizer
-description: Removes AI-sounding prose, corporate filler, and chatbot habits from English or Russian text while preserving facts and meaning. Use when the user asks to humanize, de-slop, simplify, or make text sound less like a language model. Trigger on "humanize", "убери AI-слоп", "сделай текст человечнее", "звучит как нейросеть", "убери воду", "de-slop". For academic text, preserve the genre's formality; use academic-originality for coursework and theses. Not for fiction or legal text.
+description: "Removes AI-sounding prose, corporate filler, and chatbot habits from English or Russian text while preserving facts and meaning. Use when the user asks to humanize, de-slop, simplify, or make text sound less like a language model. Trigger on \"humanize\", \"убери AI-слоп\", \"сделай текст человечнее\", \"звучит как нейросеть\", \"убери воду\", \"de-slop\". For academic text, preserve the genre's formality; use academic-originality for coursework and theses. Not for fiction or legal text."
 metadata:
   category: writing
   version: "1.0.0"

@@ -1,6 +1,6 @@
 ---
 name: learning-coach
-description: Teaches a topic through diagnosis, scaffolding, worked examples, active recall, and feedback. Use when the user wants to learn something, understand a concept, prepare for an exam, build a study plan, or be quizzed. Trigger on "learn", "teach me", "объясни", "научи", "изучи", "подготовь к экзамену", "проверь меня".
+description: "Teaches a topic through diagnosis, scaffolding, worked examples, active recall, and feedback. Use when the user wants to learn something, understand a concept, prepare for an exam, build a study plan, or be quizzed. Trigger on \"learn\", \"teach me\", \"объясни\", \"научи\", \"изучи\", \"подготовь к экзамену\", \"проверь меня\". For summarizing source material use study-notes; for finding sources use research."
 metadata:
   category: study
   version: "1.0.0"

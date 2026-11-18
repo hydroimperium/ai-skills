@@ -15,7 +15,7 @@
 
 | Репозиторий | Звёзды | Лицензия | Что взято |
 |---|---:|---|---|
-| [anthropics/skills](https://github.com/anthropics/skills) | ~188k | Apache-2.0 (многие навыки) | Формат `SKILL.md`, прогрессивное раскрытие, идеи skill-creator, документные навыки |
+| [anthropics/skills](https://github.com/anthropics/skills) | ~188k | Apache-2.0 (многие навыки) | Формат `SKILL.md`, прогрессивное раскрытие, идеи skill-creator, документные навыки, webapp testing |
 | [obra/superpowers](https://github.com/obra/superpowers) | ~314k | MIT | Системная отладка, TDD, планы, проверка перед завершением, код-ревью |
 | [mattpocock/skills](https://github.com/mattpocock/skills) | ~317k | MIT | Маленькие компонуемые навыки, двухосевое ревью, обучение, handoff |
 | [addyosmani/agent-skills](https://github.com/addyosmani/agent-skills) | ~114k | MIT | Context engineering, планирование, качество кода, безопасность |
@@ -30,6 +30,8 @@
 | [wshobson/agents](https://github.com/wshobson/agents) | ~42k | MIT | Большой каталог инженерных и предметных навыков |
 | [agentskills/agentskills](https://github.com/agentskills/agentskills) | ~27k | Apache-2.0 | Спецификация Agent Skills |
 | [OthmanAdi/planning-with-files](https://github.com/OthmanAdi/planning-with-files) | ~27k | MIT | Файловое планирование, `task_plan.md`, `findings.md`, `progress.md` |
+| [ugurozpinar/agent-ready](https://github.com/ugurozpinar/agent-ready) | — | MIT | Подготовка репозитория для агентов: `AGENTS.md`, `CLAUDE.md`, память проекта |
+| [massimodeluisa/recursive-decomposition-skill](https://github.com/massimodeluisa/recursive-decomposition-skill) | ~55 | MIT | Рекурсивная декомпозиция больших входов, context rot, батчи субагентов |
 | [career-ops-hq/career-ops](https://github.com/career-ops-hq/career-ops) | ~81k | MIT | Поиск работы, резюме, интервью, трекинг вакансий |
 | [Leonxlnx/taste-skill](https://github.com/Leonxlnx/taste-skill) | ~111k | MIT | Визуальный вкус и борьба с generic AI UI |
 | [pbakaus/impeccable](https://github.com/pbakaus/impeccable) | ~105k | Apache-2.0 | Словарь дизайна, critique, audit, polish |

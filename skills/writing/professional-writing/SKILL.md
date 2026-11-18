@@ -1,6 +1,6 @@
 ---
 name: professional-writing
-description: Writes and edits clear business text, including emails, messages, memos, announcements, and reports. Use when the user asks to write, rewrite, shorten, or improve professional communication. Trigger on "write an email", "напиши письмо", "деловая переписка", "business writing", "report", "memo". For Russian prose editing use russian-editor; for AI-slop removal use humanizer.
+description: "Writes and edits clear business text, including emails, messages, memos, announcements, and reports. Use when the user asks to write, rewrite, shorten, or improve professional communication. Trigger on \"write an email\", \"напиши письмо\", \"деловая переписка\", \"business writing\", \"report\", \"memo\". For Russian prose editing use russian-editor; for AI-slop removal use humanizer."
 metadata:
   category: writing
   version: "1.0.0"

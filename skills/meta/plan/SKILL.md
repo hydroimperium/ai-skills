@@ -1,6 +1,6 @@
 ---
 name: plan
-description: Turns an idea, request, or spec into a reviewable plan with scope, tasks, acceptance criteria, dependencies, risks, and verification. Use when the user asks to plan, write a spec, break work into tasks, prepare implementation, or says "составь план", "распиши задачи", "сделай spec", "разбей на этапы". Does not write production code.
+description: "Turns an idea, request, or spec into a reviewable plan with scope, tasks, acceptance criteria, dependencies, risks, and verification. Use when the user asks to plan, write a spec, break work into tasks, prepare implementation, or says \"составь план\", \"распиши задачи\", \"сделай spec\", \"разбей на этапы\". Trigger on \"plan\", \"implementation plan\", \"spec\", \"план\", \"этапы\", \"декомпозиция\". Does not write production code. For multi-person project roadmaps use project-planning; for product requirements use prd."
 metadata:
   category: meta
   version: "1.0.0"

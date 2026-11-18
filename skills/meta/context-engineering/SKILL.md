@@ -1,6 +1,6 @@
 ---
 name: context-engineering
-description: Manages context for long, multi-step, or file-heavy tasks. Use when a task spans many files, sessions, or agents; when the context window is filling up; when the agent loses track of decisions; or when the user asks for a handoff, state file, or context summary. Trigger on "context", "handoff", "передай контекст", "потерялся контекст", "длинная задача", "продолжи с того же места".
+description: "Manages context for long, multi-step, or file-heavy tasks. Use when a task spans many files, sessions, or agents; when the context window is filling up; when the agent loses track of decisions; or when the user asks for a handoff, state file, or context summary. Trigger on \"context\", \"handoff\", \"передай контекст\", \"потерялся контекст\", \"длинная задача\", \"продолжи с того же места\". For a long-running plan kept on disk use planning-with-files; for multi-agent coordination use orchestrate."
 metadata:
   category: meta
   version: "1.0.0"

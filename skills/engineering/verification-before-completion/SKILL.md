@@ -1,6 +1,6 @@
 ---
 name: verification-before-completion
-description: Verifies work before claiming it is done, fixed, passing, or ready. Use when finishing a task, before a commit or PR, before saying "готово", or when the user asks whether something works. Trigger on "verify", "проверь", "готово ли", "докажи, что работает", "тесты проходят". Requires fresh command output and evidence instead of assumptions.
+description: "Verifies work before claiming it is done, fixed, passing, or ready. Use when finishing a task, before a commit or PR, before saying \"готово\", or when the user asks whether something works. Trigger on \"verify\", \"проверь\", \"готово ли\", \"докажи, что работает\", \"тесты проходят\", \"перед коммитом\". Requires fresh command output and evidence instead of assumptions. For code review use code-review."
 metadata:
   category: engineering
   version: "1.0.0"
