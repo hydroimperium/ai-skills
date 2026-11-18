@@ -1,6 +1,6 @@
 ---
 name: webapp-testing
-description: "Tests web apps in a real browser: forms, flows, console, network. Use for \"протестируй интерфейс\", \"Playwright\", \"E2E\"."
+description: "Tests web apps in a real browser: forms, flows, console, network. Use for \"протестируй интерфейс\", \"Playwright\", \"E2E\". For design review use app-design or frontend-design."
 metadata:
   category: engineering
   version: "1.0.0"

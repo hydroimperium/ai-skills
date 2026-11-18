@@ -1,6 +1,6 @@
 ---
 name: accessibility
-description: "Audits and improves web accessibility: keyboard, screen readers, contrast, semantics. Use for \"доступность\", \"a11y\", \"WCAG\", \"скринридер\"."
+description: "Audits and improves web accessibility: keyboard, screen readers, contrast, semantics. Use for \"доступность\", \"a11y\", \"WCAG\", \"скринридер\". For app layout and ergonomics use app-design."
 metadata:
   category: design
   version: "1.0.0"

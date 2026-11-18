@@ -1,6 +1,6 @@
 ---
 name: frontend-design
-description: "Designs and reviews web interfaces: hierarchy, typography, color, states, responsiveness. Use for \"UI\", \"дизайн\", \"интерфейс\", \"сделай красиво\"."
+description: "Designs and reviews web interfaces: hierarchy, typography, color, states, responsiveness. Use for \"UI\", \"дизайн\", \"интерфейс\", \"сделай красиво\". For app layout and ergonomics use app-design."
 metadata:
   category: design
   version: "1.0.0"

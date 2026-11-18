@@ -87,5 +87,6 @@
 
 | Навык | Когда использовать |
 |---|---|
-| [`frontend-design`](../skills/design/frontend-design/SKILL.md) | UI/UX, иерархия, типографика, состояния, адаптивность |
+| [`frontend-design`](../skills/design/frontend-design/SKILL.md) | Визуальный стиль: иерархия, типографика, цвет, состояния, адаптивность |
+| [`app-design`](../skills/design/app-design/SKILL.md) | UI приложения: расположение кнопок, плотность, эргономика, сценарии |
 | [`accessibility`](../skills/design/accessibility/SKILL.md) | WCAG, клавиатура, скринридеры, контраст, формы |

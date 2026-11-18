@@ -35,6 +35,9 @@
 | [career-ops-hq/career-ops](https://github.com/career-ops-hq/career-ops) | ~81k | MIT | Поиск работы, резюме, интервью, трекинг вакансий |
 | [Leonxlnx/taste-skill](https://github.com/Leonxlnx/taste-skill) | ~111k | MIT | Визуальный вкус и борьба с generic AI UI |
 | [pbakaus/impeccable](https://github.com/pbakaus/impeccable) | ~105k | Apache-2.0 | Словарь дизайна, critique, audit, polish |
+| [PGraeff/frontend-design-pro-agent-skill](https://github.com/PGraeff/frontend-design-pro-agent-skill) | — | Apache-2.0 | Полный цикл UI/UX для web/mobile, design intelligence, UI copy, verification |
+| [oil-oil/oil-ui](https://github.com/oil-oil/oil-ui) | — | MIT | Визуальные направления, сравнение вариантов, screenshot-based polish |
+| [arham777/ui-ux-kit](https://github.com/arham777/ui-ux-kit) | — | MIT | Роутинг по поверхностям, анти-slop, `DESIGN_SYSTEM.md` |
 | [coreyhaines31/marketingskills](https://github.com/coreyhaines31/marketingskills) | ~59k | MIT | Маркетинговые навыки и структура копирайтинга |
 
 ## Промпт-энхансеры
