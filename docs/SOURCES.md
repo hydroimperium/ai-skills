@@ -16,7 +16,7 @@
 | Репозиторий | Звёзды | Лицензия | Что взято |
 |---|---:|---|---|
 | [anthropics/skills](https://github.com/anthropics/skills) | ~188k | Apache-2.0 (многие навыки) | Формат `SKILL.md`, прогрессивное раскрытие, идеи skill-creator, документные навыки, webapp testing |
-| [obra/superpowers](https://github.com/obra/superpowers) | ~314k | MIT | Системная отладка, TDD, планы, проверка перед завершением, код-ревью |
+| [obra/superpowers](https://github.com/obra/superpowers) | ~314k | MIT | Системная отладка, TDD, планы, проверка перед завершением, код-ревью, параллельная диспетчеризация субагентов, subagent-driven development, executing plans |
 | [mattpocock/skills](https://github.com/mattpocock/skills) | ~317k | MIT | Маленькие компонуемые навыки, двухосевое ревью, обучение, handoff |
 | [addyosmani/agent-skills](https://github.com/addyosmani/agent-skills) | ~114k | MIT | Context engineering, планирование, качество кода, безопасность |
 | [google/skills](https://github.com/google/skills) | ~23k | Apache-2.0 | Упаковка навыков под продукты и технологии |
