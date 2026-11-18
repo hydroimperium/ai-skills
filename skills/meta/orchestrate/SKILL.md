@@ -11,6 +11,10 @@ metadata:
 
 Use subagents when they make the work faster or more reliable, not because multi-agent sounds impressive.
 
+## Hard gate
+
+When `/orchestrate` is explicitly invoked, your first action after loading this skill is to launch at least one subagent. Do not inspect files, answer, or edit before that. For a small task, launch one `researcher` (read-only, can load skills) or `reviewer` and let it do the task or verify your answer. The only exception is a missing subagent tool.
+
 ## When to use
 
 Use when:
@@ -28,7 +32,7 @@ Do not use when:
 - subagents would edit the same files;
 - the coordination cost is higher than the task itself.
 
-Exception: when the user explicitly invokes an orchestration command such as `/orchestrate`, always launch at least one subagent. For a small task, use one read-only researcher or reviewer instead of skipping subagents entirely.
+Exception: when the user explicitly invokes an orchestration command such as `/orchestrate`, always launch at least one subagent. This is mandatory, not a suggestion. For a small task, use one read-only researcher or reviewer instead of skipping subagents entirely.
 
 ## Step 1: Decide if a team is worth it
 
@@ -41,7 +45,7 @@ Answer these before creating anyone:
 5. Where could two roles conflict?
 6. How will the primary agent verify the result?
 
-If you cannot name at least two independent workstreams, do not create subagents.
+If you cannot name two independent workstreams, use one subagent: `researcher` for read-only work, or `reviewer` for verification. Do not skip subagents when `/orchestrate` was explicitly invoked.
 
 ## Step 2: Choose the pipeline
 
@@ -100,10 +104,10 @@ Typical roles:
 
 | Role | Use for | Access |
 |---|---|---|
-| Researcher | map code, find facts, compare options | read-only |
+| Researcher | map code, find facts, compare options | read-only, may use skills |
 | Architect | design interfaces, data flow, trade-offs | read-only |
 | Implementer | make scoped changes | edit in its own files |
-| Reviewer | find bugs, scope creep, missing tests | read-only |
+| Reviewer | find bugs, scope creep, missing tests | read-only, may use skills |
 | Tester | run checks, reproduce bugs, verify behavior | run tests, no edits |
 | Domain expert | legal, medical, finance, design, data | read-only unless asked |
 
@@ -112,13 +116,13 @@ Typical roles:
 If the harness has a subagent tool:
 
 - When this skill is explicitly invoked, launch at least one subagent even if the task is small. For a trivial task, one read-only researcher or reviewer is enough.
-- Use a read-only agent for research and review.
+- Use `researcher` for read-only research and review; it can load Agent Skills. Use `explore` for pure file search. Use a general agent for implementation.
 - Use a general agent for implementation.
 - Launch independent roles in parallel.
 - Run dependent roles sequentially.
 - Give each subagent a self-contained prompt: task, context, files, output format, boundaries, stop conditions.
 - Ask for a compact report with evidence, not a full transcript.
-- For read-only research, tell the subagent to use `read`, `glob`, and `grep` instead of shell commands. Shell permission prompts slow everything down.
+- For read-only research, tell `researcher` it may load matching skills and should prefer `read`, `glob`, and `grep` over shell. For `explore`, tell it to use `read`, `glob`, and `grep` instead of shell commands. Shell permission prompts slow everything down.
 - Record the child session ID and title returned by the subagent tool. Show them to the user so they can open the child session and watch it live.
 - After launching independent roles, stop and wait for their reports. Do not fill the wait with unrelated exploration or repeated status checks.
 - If the harness returns results asynchronously, wait for completion notifications, then synthesize immediately.
