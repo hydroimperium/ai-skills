@@ -1,6 +1,6 @@
 ---
 name: data-analysis
-description: "Explores, cleans, analyzes, and reports on datasets with statistical or exploratory methods. Use for larger datasets, database extracts, cohorts, anomalies, correlations, and evidence-based decisions. Trigger on \"data analysis\", \"EDA\", \"датасет\", \"статистика\", \"корреляция\", \"выбросы\", \"когорта\", \"анализ данных\". For Excel formulas and small workbook tables use spreadsheet-analysis instead. Validates before reporting and never invents data."
+description: "Explores, cleans, and analyzes datasets with statistics and EDA. Use for \"датасет\", \"EDA\", \"корреляция\", \"выбросы\", \"анализ данных\"."
 metadata:
   category: data
   version: "1.0.0"

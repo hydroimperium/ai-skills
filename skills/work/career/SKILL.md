@@ -1,6 +1,6 @@
 ---
 name: career
-description: "Helps with job search, resume review, LinkedIn profile, outreach, interview preparation, and offer evaluation. Use when the user asks for career help, a resume review, interview questions, or a job search plan. Trigger on \"resume\", \"CV\", \"собеседование\", \"резюме\", \"поиск работы\", \"оффер\", \"карьера\", \"стажировка\". For general business writing use professional-writing; for interview coding use code-review or test-driven-development."
+description: "Helps with resumes, interviews, job search, and offers. Use for \"резюме\", \"собеседование\", \"поиск работы\", \"оффер\"."
 metadata:
   category: work
   version: "1.0.0"

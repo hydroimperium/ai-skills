@@ -1,6 +1,6 @@
 ---
 name: skill-creator
-description: "Creates, improves, and validates Agent Skills. Use when the user wants to turn a workflow into a reusable skill, write a SKILL.md, improve an existing skill's trigger description or instructions, design test prompts, or check a skill against the Agent Skills format. Trigger on \"create a skill\", \"создай навык\", \"сделай скилл\", \"улучши навык\", \"skill.md\", \"триггеры навыка\". For finding an existing skill use find-skills; for prompt enhancement use prompt-enhancer."
+description: "Creates, improves, and validates Agent Skills. Use for \"создай навык\", \"сделай скилл\", \"SKILL.md\", \"skill\"."
 metadata:
   category: meta
   version: "1.0.0"

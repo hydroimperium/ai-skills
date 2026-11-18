@@ -134,22 +134,21 @@ function checkDescriptionQuality(relative, description) {
   const quoted = description.match(/"[^"]+"/g) ?? [];
   const hasTrigger = /\btrigger(s|ed)? on\b/i.test(description) || quoted.length >= 2;
   const hasRussian = /[А-Яа-яЁё]/.test(description);
-  const hasBoundary = /\b(instead|not for|do not use|don't use|for .+ use)\b/i.test(description);
 
   if (!hasUse) {
-    warnings.push(`${relative}: description should say when to use it ("Use when ...")`);
+    warnings.push(`${relative}: description should say when to use it ("Use when ..." or "Use for ...")`);
   }
   if (!hasTrigger) {
-    warnings.push(`${relative}: description should include trigger phrases ("Trigger on ...")`);
+    warnings.push(`${relative}: description should include trigger phrases ("Trigger on ..." or at least two quoted phrases)`);
   }
   if (!hasRussian) {
     warnings.push(`${relative}: description has no Russian trigger phrase; add one for Russian-speaking users`);
   }
-  if (!hasBoundary) {
-    warnings.push(`${relative}: description has no boundary; add "For X use Y instead" when another skill overlaps`);
+  if (description.length < 80) {
+    warnings.push(`${relative}: description is very short (${description.length} chars); add concrete triggers`);
   }
-  if (description.length < 120) {
-    warnings.push(`${relative}: description is very short (${description.length} chars); add concrete contexts`);
+  if (description.length > 240) {
+    warnings.push(`${relative}: description is ${description.length} chars; keep it under ~240 for the @ menu`);
   }
 }
 

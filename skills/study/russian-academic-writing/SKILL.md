@@ -1,6 +1,6 @@
 ---
 name: russian-academic-writing
-description: "Writes and structures Russian academic texts, including lab reports, coursework, VKR, essays, reports, and research summaries. Use when the user asks for a лабораторная, курсовая, реферат, отчёт, ВКР, академический текст, введение, обзор литературы, методику, результаты или заключение. Trigger on \"лабораторная\", \"курсовая\", \"реферат\", \"ВКР\", \"отчёт\", \"академический текст\", \"введение\", \"заключение\". Russian-first, citation-aware, and anti-AI-slop. For improving originality of existing text use academic-originality; for GOST formatting use gost-formatting."
+description: "Writes Russian academic texts: labs, coursework, VKR, reports. Use for \"курсовая\", \"ВКР\", \"лабораторная\", \"реферат\"."
 metadata:
   category: study
   version: "1.0.0"

@@ -1,6 +1,6 @@
 ---
 name: find-skills
-description: "Finds and installs Agent Skills from the open ecosystem when the current skill set lacks a capability. Use when the user asks whether a skill exists, wants to extend the agent, or needs a specialized workflow that is not covered locally. Trigger on \"find a skill\", \"install a skill\", \"is there a skill for\", \"skills.sh\", \"найди навык\", \"установи скилл\", \"есть ли навык\". Searches with the Skills CLI, checks source reputation and install counts, and presents options before installing. For authoring a new skill use skill-creator; for this repo's curated skills check the local catalog first."
+description: "Finds and installs external Agent Skills with source checks. Use for \"найди навык\", \"установи скилл\", \"find a skill\"."
 metadata:
   category: meta
   version: "1.0.0"

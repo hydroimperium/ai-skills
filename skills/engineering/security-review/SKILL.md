@@ -1,6 +1,6 @@
 ---
 name: security-review
-description: "Reviews code, features, and architecture for common security risks. Use when handling authentication, authorization, user input, file uploads, payments, secrets, APIs, AI agents, or when the user asks for a security audit, threat model, or hardening review. Trigger on \"security\", \"безопасность\", \"уязвимость\", \"аудит\", \"threat model\", \"OWASP\". For general correctness review use code-review; for dependency or secret scanning use the project's own tools."
+description: "Reviews code and architecture for security risks: auth, input, secrets, APIs. Use for \"безопасность\", \"уязвимость\", \"аудит\", \"security\"."
 metadata:
   category: engineering
   version: "1.0.0"

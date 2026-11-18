@@ -1,6 +1,6 @@
 ---
 name: russian-text-quality
-description: "Reviews Russian UI strings, locale files, and mixed Russian-English code for pluralization, case agreement, terminology drift, language mixing, and transliterated identifiers. Use when the project contains Russian text, i18n files, or Russian-speaking users. Trigger on \"ru.json\", \"локализация\", \"русские строки\", \"плюрализация\", \"перевод интерфейса\", \"i18n\", \"склонения\". For general Russian prose editing use russian-editor; for translation use translation."
+description: "Reviews Russian UI strings, locales, plurals, and mixed EN/RU text. Use for \"локализация\", \"русские строки\", \"i18n\", \"склонения\"."
 metadata:
   category: language
   version: "1.0.0"

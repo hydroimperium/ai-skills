@@ -32,7 +32,7 @@ const name = positionals[0];
 const category = flags.get('--category') ?? '';
 const description =
   flags.get('--description') ??
-  '<What it does>. Use when <situations>. Trigger on "<English phrase>", "<Russian phrase>". <Boundary: for X use Y instead.> <Quality guarantee>.';
+  '<What it does>. Use for "<English trigger>", "<Russian trigger>", "<another trigger>".';
 
 if (!/^[a-z0-9]+(?:-[a-z0-9]+)*$/.test(name)) {
   console.error('Skill name must use lowercase letters, numbers, and single hyphens.');
@@ -59,13 +59,19 @@ if (!description.trim() || description.length > 1024) {
   process.exit(1);
 }
 
-if (!/\buse (when|for)\b/i.test(description)) {
-  console.error('Description must include "Use when ..." so the agent knows when to load the skill.');
+if (description.length > 240) {
+  console.error('Keep the description under 240 characters; move details to the "When to use" section in the body.');
   process.exit(1);
 }
 
-if (!/\btrigger(s|ed)? on\b/i.test(description)) {
-  console.error('Description must include "Trigger on ..." with concrete English and Russian phrases.');
+if (!/\buse (when|for)\b/i.test(description)) {
+  console.error('Description must include "Use when ..." or "Use for ..." so the agent knows when to load the skill.');
+  process.exit(1);
+}
+
+const quoted = description.match(/"[^"]+"/g) ?? [];
+if (!/\btrigger(s|ed)? on\b/i.test(description) && quoted.length < 2) {
+  console.error('Description must include "Trigger on ..." or at least two quoted trigger phrases (English and Russian).');
   process.exit(1);
 }
 

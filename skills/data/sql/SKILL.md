@@ -1,6 +1,6 @@
 ---
 name: sql
-description: "Writes, reviews, and optimizes SQL queries for correctness, joins, aggregation, window functions, performance, and dialect differences. Use when the user asks for a query, a report, a migration, or help with slow SQL. Trigger on \"SQL\", \"запрос\", \"join\", \"group by\", \"window function\", \"индекс\", \"база данных\", \"медленный запрос\". For statistical analysis, dashboards, or data cleaning use data-analysis instead."
+description: "Writes, reviews, and optimizes SQL queries. Use for \"SQL\", \"запрос\", \"join\", \"индекс\", \"медленный запрос\"."
 metadata:
   category: data
   version: "1.0.0"

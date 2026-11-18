@@ -49,25 +49,25 @@ Instructions...
 
 ## Формула description
 
-`description` — это не аннотация, а триггер. Агент читает его, чтобы решить, загружать ли навык. Пишите одним абзацем:
+`description` — короткая строка для меню `@` и автоподбора. Ориентир: одна строка, до 240 символов.
 
 ```text
-<что делает>. Use when <когда использовать>. Trigger on "<EN-фраза>", "<RU-фраза>", "<ещё синоним>". <граница: для X используйте Y>. <гарантия качества>.
+<что делает>. Use for "<EN-триггер>", "<RU-триггер>", "<ещё синоним>".
 ```
 
 Правила:
 
 - Начинайте с глагола: `Reviews`, `Writes`, `Plans`, `Finds`.
-- Добавляйте `Use when ...` с конкретными ситуациями, а не общими словами.
-- Давайте 3–7 триггерных фраз, включая русские формулировки пользователя.
-- Указывайте границу, если есть пересечение: `For X use Y instead`.
-- Не перечисляйте всё тело навыка; description должен быть коротким и точным.
-- Проверяйте `npm run validate`: валидатор предупреждает, если нет `Use when`, триггеров, русских фраз или границы.
+- Одна короткая фраза, что делает навык.
+- `Use for ...` и 3–5 ключевых триггеров, включая русские формулировки.
+- Детали, полный список ситуаций и границы — в `## When to use` в теле навыка.
+- Не дублируйте всё тело в description: он показывается в меню `@` и должен читаться с одного взгляда.
+- Проверяйте `npm run validate`: валидатор предупреждает, если нет `Use for`, триггеров, русских фраз или если строка длиннее 240 символов.
 
 Пример:
 
 ```text
-Reviews a branch, pull request, commit range, or uncommitted changes for correctness, standards, scope, tests, and risk. Use when the user asks to review code, check a PR, inspect a diff, or decide whether a change is ready to merge. Trigger on "review", "code review", "ревью", "проверь код", "посмотри PR". For security-only review use security-review instead.
+Reviews code, PRs, commits, and diffs for bugs, regressions, and missing tests. Use for "ревью", "проверь код", "PR", "дифф".
 ```
 
 ## Прогрессивное раскрытие

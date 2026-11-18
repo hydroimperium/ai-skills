@@ -1,6 +1,6 @@
 ---
 name: spreadsheet-analysis
-description: "Works with Excel, Google Sheets, CSV, and small business tables, including formulas, pivot tables, cleaning, totals, validation, and summaries. Use when the user asks to fix or build a spreadsheet, check formulas, reconcile totals, or analyze a workbook. Trigger on \"spreadsheet\", \"Excel\", \"Google Sheets\", \"формула\", \"сводная таблица\", \"xlsx\", \"посчитай в таблице\". For statistical analysis and large datasets use data-analysis instead."
+description: "Works with Excel, Sheets, and CSV: formulas, pivots, totals, validation. Use for \"Excel\", \"формула\", \"сводная таблица\", \"xlsx\"."
 metadata:
   category: work
   version: "1.0.0"

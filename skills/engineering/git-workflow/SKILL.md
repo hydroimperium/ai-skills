@@ -1,6 +1,6 @@
 ---
 name: git-workflow
-description: "Handles safe git workflows for branches, commits, worktrees, rebases, merges, conflicts, and pull requests. Use when starting work, preparing a commit or PR, resolving conflicts, cleaning history, or when the user asks about git. Trigger on \"git\", \"commit\", \"branch\", \"PR\", \"merge\", \"rebase\", \"ветка\", \"коммит\", \"конфликт\", \"пуш\". For code review use code-review; for final verification use verification-before-completion."
+description: "Handles branches, commits, rebases, merges, conflicts, and PRs safely. Use for \"git\", \"коммит\", \"ветка\", \"конфликт\", \"PR\"."
 metadata:
   category: engineering
   version: "1.0.0"

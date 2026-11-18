@@ -1,6 +1,6 @@
 ---
 name: code-review
-description: "Reviews a branch, pull request, commit range, or uncommitted changes for correctness, standards, scope, tests, and risk. Use when the user asks to review code, check a PR, inspect a diff, or decide whether a change is ready to merge. Trigger on \"review\", \"code review\", \"ревью\", \"проверь код\", \"посмотри PR\", \"можно мержить\", \"дифф\". Load this skill before exploring the repository when the user asks for a review. For security-only review use security-review; for final verification use verification-before-completion."
+description: "Reviews code, PRs, commits, and diffs for bugs, regressions, and missing tests. Use for \"ревью\", \"проверь код\", \"PR\", \"дифф\"."
 metadata:
   category: engineering
   version: "1.0.0"

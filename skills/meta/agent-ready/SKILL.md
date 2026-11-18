@@ -1,6 +1,6 @@
 ---
 name: agent-ready
-description: "Prepares a repository for coding agents: reads the code, detects the project shape, and writes or updates AGENTS.md, a CLAUDE.md bridge, docs/ai/ai-memory.md, and optional product, voice, persona, and design-system docs. Use when the user asks to onboard a repo to AI agents, create or refresh AGENTS.md, add shared project memory, or make a codebase agent-ready. Trigger on \"agent-ready\", \"AGENTS.md\", \"CLAUDE.md\", \"project memory\", \"подготовь репозиторий для агента\", \"создай AGENTS.md\", \"память проекта\". Shows a plan before writing, asks only for what code cannot reveal, marks unconfirmed statements as draft, and never commits, pushes, or deletes files. For general documentation use documentation instead."
+description: "Prepares a repo for agents: AGENTS.md, CLAUDE.md, project memory. Use for \"AGENTS.md\", \"память проекта\", \"agent-ready\"."
 metadata:
   category: meta
   version: "1.0.0"

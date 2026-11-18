@@ -1,6 +1,6 @@
 ---
 name: study-notes
-description: "Turns books, articles, lectures, videos, or rough notes into structured study notes, summaries, and flashcards. Use when the user asks for notes, a summary, a cheat sheet, Obsidian Markdown, or spaced-repetition cards. Trigger on \"notes\", \"конспект\", \"заметки\", \"лекция\", \"summary\", \"шпаргалка\", \"карточки\", \"Obsidian\". For teaching or quizzing use learning-coach; for research synthesis use research."
+description: "Turns material into notes, summaries, and flashcards. Use for \"конспект\", \"заметки\", \"шпаргалка\", \"карточки\"."
 metadata:
   category: study
   version: "1.0.0"

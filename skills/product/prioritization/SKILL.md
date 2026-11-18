@@ -1,6 +1,6 @@
 ---
 name: prioritization
-description: "Ranks features, tasks, ideas, or risks using explicit criteria and frameworks such as RICE, ICE, MoSCoW, Kano, or weighted scoring. Use when the user asks what to do first, how to prioritize a backlog, or how to choose between options. Trigger on \"prioritize\", \"приоритеты\", \"что делать первым\", \"что важнее\", \"бэклог\", \"RICE\", \"ICE\", \"MoSCoW\". For project timelines use project-planning; for implementation sequencing use plan."
+description: "Ranks features and tasks with RICE, ICE, MoSCoW, or weighted scoring. Use for \"приоритеты\", \"бэклог\", \"что важнее\", \"RICE\"."
 metadata:
   category: product
   version: "1.0.0"

@@ -1,6 +1,6 @@
 ---
 name: project-planning
-description: "Plans projects and initiatives with goals, scope, milestones, dependencies, risks, owners, and status tracking. Use when the user asks for a project plan, roadmap, timeline, launch plan, or help coordinating work across people. Trigger on \"project plan\", \"roadmap\", \"план проекта\", \"дорожная карта\", \"запуск\", \"сроки\", \"зависимости\", \"вехи\". For implementation plans use plan; for product requirements use prd."
+description: "Plans projects with milestones, dependencies, risks, and owners. Use for \"план проекта\", \"roadmap\", \"вехи\", \"сроки\"."
 metadata:
   category: work
   version: "1.0.0"

@@ -1,6 +1,6 @@
 ---
 name: recursive-decomposition
-description: "Handles large inputs and 100+ file tasks by sizing, filtering, chunking, and delegating disjoint batches to subagents, then verifying and synthesizing the results. Use when a task spans 10+ files or 50k+ tokens, when completeness matters, or when the user asks to analyze a large codebase, aggregate many documents, or avoid context rot. Trigger on \"recursive decomposition\", \"large codebase\", \"many files\", \"context rot\", \"разбей на части\", \"большой проект\", \"много файлов\", \"проанализируй всё\". Keeps recursion depth at 1, gives each subagent a self-contained brief, and spot-checks the synthesis. For simple lookups read directly; for multi-agent coordination use orchestrate."
+description: "Breaks large codebases and document sets into verified batches. Use for \"много файлов\", \"большой проект\", \"разбей на части\"."
 metadata:
   category: meta
   version: "1.0.0"

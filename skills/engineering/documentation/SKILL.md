@@ -1,6 +1,6 @@
 ---
 name: documentation
-description: "Writes and reviews README files, architecture decision records, API docs, how-to guides, and reference documentation. Use when the user asks for docs, an ADR, onboarding material, or wants existing documentation improved. Trigger on \"documentation\", \"README\", \"ADR\", \"docs\", \"документация\", \"опиши проект\", \"архитектурное решение\", \"гайд\". For product requirements use prd; for API contracts use api-design."
+description: "Writes and reviews README, ADR, API docs, and how-to guides. Use for \"документация\", \"README\", \"ADR\", \"опиши проект\"."
 metadata:
   category: engineering
   version: "1.0.0"

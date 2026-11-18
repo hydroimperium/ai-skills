@@ -1,6 +1,6 @@
 ---
 name: webapp-testing
-description: "Tests local web applications in a real browser: starts the app, drives the UI, checks console and network errors, captures screenshots, and verifies behavior. Use when the user asks to test a web UI, reproduce a browser bug, check a form or flow, or add end-to-end coverage. Trigger on \"webapp testing\", \"Playwright\", \"E2E\", \"browser test\", \"протестируй интерфейс\", \"проверь форму\", \"E2E-тест\". Uses the OpenCode browser tools first and falls back to Playwright scripts when a repeatable test is needed. For accessibility audits use accessibility; for visual design review use frontend-design."
+description: "Tests web apps in a real browser: forms, flows, console, network. Use for \"протестируй интерфейс\", \"Playwright\", \"E2E\"."
 metadata:
   category: engineering
   version: "1.0.0"

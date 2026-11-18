@@ -1,6 +1,6 @@
 ---
 name: orchestrate
-description: "Plans and runs multi-agent teams for complex tasks, deciding whether subagents are worth it, defining roles, a parallel or sequential pipeline, handoffs, and verification. Use when a task is large, decomposable, or benefits from parallel research, implementation, and review. Trigger on \"subagents\", \"субагенты\", \"parallel\", \"распараллель\", \"team\", \"оркестрация\", \"сложная задача\". For a single long task kept on disk use planning-with-files; for context handoff use context-engineering."
+description: "Runs multi-agent teams for complex, parallel work. Use for \"субагенты\", \"оркестрация\", \"распараллель\", \"сложная задача\"."
 metadata:
   category: meta
   version: "1.0.0"

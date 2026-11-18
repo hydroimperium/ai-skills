@@ -1,6 +1,6 @@
 ---
 name: planning-with-files
-description: "Keeps a long task's plan and findings in markdown files on disk, re-reads them at each step, and recovers after compaction, /clear, or a crashed session. Use when a task spans many steps or sessions, when the context is filling up, or when the user asks to plan on disk, keep a task plan, resume after a restart, or avoid losing progress. Trigger on \"planning with files\", \"task plan\", \"progress file\", \"resume after compaction\", \"план в файле\", \"не потерять прогресс\", \"продолжи после перезапуска\". Uses task_plan.md, findings.md, and progress.md, updates them at milestones, and closes with a deterministic completion gate. For a chat-only handoff use context-engineering; for multi-agent coordination use orchestrate."
+description: "Keeps a long task's plan in files so it survives compaction. Use for \"план в файле\", \"не потерять прогресс\", \"task plan\"."
 metadata:
   category: meta
   version: "1.0.0"

@@ -1,6 +1,6 @@
 ---
 name: test-driven-development
-description: "Implements features and bug fixes with a red-green-refactor loop. Use when writing new behavior, fixing a bug, refactoring, or when the user asks for TDD, tests first, or test coverage. Trigger on \"TDD\", \"test first\", \"напиши тесты\", \"через тесты\", \"red green refactor\", \"покрытие тестами\". For root-cause diagnosis use systematic-debugging; for final verification use verification-before-completion."
+description: "Implements features and fixes with red-green-refactor and tests first. Use for \"TDD\", \"напиши тесты\", \"через тесты\", \"test first\"."
 metadata:
   category: engineering
   version: "1.0.0"
